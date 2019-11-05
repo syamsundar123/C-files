@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	double n1,n2;
+		float NA;
+	double d;
+	float critical_angle;
+	printf("Enter first medium n1 value:");
+	scanf("%lf",&n1);
+	printf("Enter second medium n2 value:");
+	scanf("%lf",&n2);
+ if(n1>n2)
+ {
+ 
+	critical_angle=asin(n2/n1)*(180/3.14);
+	printf("\nCritical angle is:%lf\n",critical_angle);
+		float FC;
+		FC=(n2/n1)-1;
+	printf("Fractional change is:%f\n",FC);
+		float a,b;
+	a=n1*n1;
+	b=n2*n2;
+	NA=sqrt(a-b);
+	printf("Numerical Aperture is:%f",NA);
+	}
+	else
+	printf("n1 should be greater than n2");
+}
