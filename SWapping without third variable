@@ -1,0 +1,14 @@
+//Swapping without using third variable
+#include<stdio.h>
+int main()
+{
+	int a,b;
+	printf("Enter Two Values to swap:\n");
+	scanf("%d%d",&a,&b);
+	printf("Before Swapping:%d %d",a,b);
+  //logic for Swapping
+	a=a+b;
+	b=a-b;
+	a=a-b;
+	printf("\nAfter Swapping :%d %d",a,b);
+}
